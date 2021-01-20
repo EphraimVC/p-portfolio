@@ -1,0 +1,414 @@
+/* font-family: 'Montserrat', sans-serif;  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: aliceblue;
+}
+
+.welcomeHeader {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+/* image effects ----------------------------------------------------------- */
+.faceImg {
+  /* float: right; */
+  height: 67vh;
+  margin-left: 46rem;
+  margin-top: 5px;
+  animation: fadeIn 4s normal;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+/* typewriting effect code ----------------------------------------------------------- */
+
+.line {
+  font-family: Montserrat;
+  position: relative;
+  color: cornsilk;
+  top: 22%;
+  margin-left: 10em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 150%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typeEffect {
+  animation: typewriter 3.5s steps(40) 4s 1 normal both,
+    blinkTextCursor 500ms steps(31) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 20em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* line1 ----------------------------------------------------------- */
+.line1 {
+  font-family: Montserrat;
+  position: relative;
+  color: cornsilk;
+  top: 27%;
+  margin-left: 14rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 150%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typeEffect1 {
+  animation: typewriter 3.5s steps(40) 7s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 20em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+/* line 2 ----------------------------------------------------------- */
+.line2 {
+  font-family: Montserrat;
+  position: relative;
+  color: cornsilk;
+  top: 35%;
+  margin-left: 14rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 150%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typeEffect2 {
+  animation: typewriter 3.5s steps(40) 10s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 20em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #c7ca1c;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* header Button  ----------------------------------------------------------- */
+
+.beginText {
+  opacity: 0;
+  position: absolute;
+  color: #fddb3a;
+  font-family: Montserrat;
+  height: 3rem;
+  width: 15rem;
+  margin-top: 22rem;
+  margin-left: 25rem;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: Begin 3.5s normal;
+  animation-timing-function: linear;
+  animation-delay: 14s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Begin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+/* list---------------------------------------------------------------------------- */
+
+.navbar {
+  z-index: 100000;
+  position: relative;
+}
+
+.list {
+  opacity: 0;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: aliceblue;
+  list-style: none;
+  text-align: center;
+  margin-top: 3rem;
+  animation: navIn 3.5s normal;
+  animation-timing-function: linear;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+@keyframes navIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+li {
+  cursor: pointer;
+  display: inline;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* div story---------------------------------------------------------------------------- */
+.story {
+  padding-left: 7rem;
+  height: 100vh;
+  background: url(media/space.jpg) no-repeat;
+  background-size: cover;
+}
+
+.story h3 {
+  font-family: Montserrat;
+  font-size: 3rem;
+  color: yellow;
+  padding: 3rem 0 0 30rem;
+}
+
+.stories {
+  float: right;
+  height: 20rem;
+  width: 20rem;
+  border: 2px solid white;
+  background-color: lightgray;
+  margin-top: 7rem;
+}
+.github {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 10rem;
+  cursor: pointer;
+}
+
+.Experience {
+  font-family: Montserrat;
+  position: absolute;
+  background-color: #fddb3a;
+  height: 15rem;
+  width: 40rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 8rem;
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+
+/* div skills---------------------------------------------------------------------------- */
+
+.skills {
+  position: relative;
+  background-color: black;
+  font-family: Montserrat;
+  height: 100vh;
+}
+
+.skills h3 {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  padding: 3rem 10rem 0 0;
+  margin-left: 35rem;
+}
+.skills p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  margin-left: 25rem;
+  margin-top: 8rem;
+}
+.doMoreImg {
+  position: absolute;
+  height: 100vh;
+}
+
+.skillsIllus {
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 26rem;
+}
+.view {
+  margin: 2rem 0;
+}
+
+.skillsIcons {
+  position: absolute;
+  color: white;
+  margin-top: 12rem;
+  margin-left: 23rem;
+}
+.grItem {
+  margin: 3rem 0;
+}
+
+.html {
+  background-color: #e95f27;
+  height: 3rem;
+  width: 25rem;
+}
+.one {
+  color: #e95f27;
+}
+.css {
+  background-color: #0392cb;
+  height: 3rem;
+  width: 20rem;
+}
+.two {
+  color: #0392cb;
+}
+.js {
+  background-color: #efd919;
+  height: 3rem;
+  width: 10rem;
+}
+.three {
+  color: #efd919;
+}
+
+.linux {
+  background-color: black;
+  border: 2px solid #fddb3a;
+  height: 3rem;
+  width: 7rem;
+}
+.eh {
+  background-color: #d2e603;
+  height: 3rem;
+  width: 5rem;
+}
+.five {
+  color: #d2e603;
+}
+
+/* div contact---------------------------------------------------------------------------- */
+
+.contact {
+  position: relative;
+  background: url(media/space1.jpg) no-repeat;
+  background-size: cover;
+  font-family: Montserrat;
+  height: 100vh;
+  padding-left: 35rem;
+}
+
+.contact h3 {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  padding: 7rem 0 0 0rem;
+}
+.inputFields {
+  position: absolute;
+
+  height: 20rem;
+  padding-top: 15rem;
+}
+
+input {
+  height: 3rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  background-color: #eeeded;
+  outline: none;
+  padding-left: 1rem;
+}
+
+textarea {
+  margin-top: 3rem;
+  border-radius: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+footer {
+  font-family: Montserrat;
+  height: 3rem;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  background-color: black;
+}
+/* message to crew  */
+
+.messageDiv {
+  font-family: Montserrat;
+  background-color: #ffe05d;
+  height: 110vh;
+  text-align: center;
+  padding-top: 7rem;
+  letter-spacing: 2px;
+  line-height: 5rem;
+}
+
+.messageDiv h1 {
+  color: #81b214;
+}
+.far {
+  color: black;
+}
